@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degital service website</title>
+
+    <!-- favicone -->
+    <link rel="shortcut icon" href="Images/fave_icon.png" type="image/x-icon">
+    <!-- stylin css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- slick.min css -->
+    <link rel="stylesheet" href="css/slick.min.css">
+    <!-- eays.css -->
+    <link rel="stylesheet" href="css/easy.css">
+    <!-- /* Scroll cdn */ -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- fount awesome cdn for free icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- customjs -->
+    <script src="js/scrip.js" defer></script>
+</head>
+<body>
+    <div class="site-wrapper">
+        <div class="header-index">
+            <!-- ======= 1.1 Header section ======= -->
+            <header>
+                <div class="container navbar">
+                    <div class="container-nav flex">
+                        <!-- Site Logo -->
+                        <a href="/" class="navbar-logo"> <img src="Images/logo.png" alt=""></a>
+                        <button onclick="openNav()" class="navbar-toggler" type="button">
+                            <span class="fa-solid fa-bars"></span>
+                        </button>
+                        <!-- manus -->
+                        <ul class="navbar-nav  flex">
+                            <li><a href="/" class="nav-link active">Home</a></li>
+                            <li><a href="/" class="nav-link">About</a></li>
+                            <li><a href="/" class="nav-link">contact</a></li>
+                            <li class="dropdown">
+                                <a href="/" class="nav-link dropdown-toggle">Pages</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/" class="dropdown-item">Service</a></li>
+                                    <li><a href="/" class="dropdown-item">pricing plan</a></li>
+                                    <li><a href="/" class="dropdown-item">Portafolio</a></li>
+                                    <li><a href="/" class="dropdown-item">Team</a></li>
+                                    <li><a href="/" class="dropdown-item">Testimonials</a></li>
+                                    <li><a href="/" class="dropdown-item">Faq</a></li>
+                                    <li><a href="/" class="dropdown-item">Blog</a></li>
+                                    <li><a href="/" class="dropdown-item">Coming Soon</a></li>
+                                    <li><a href="/" class="dropdown-item">404</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-right flex">
+                        <p>Call Us <span>+123 456 7890</span></p>
+                        <!-- header button -->
+                        <i onclick="open_search()" class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+                <aside id="mySidepanel" class="sidepanel">
+                    <div class="sidebar flex">
+                        <a href="">
+                            <img src="Images/logo.png" alt=""></a>
+                            <button onclick="closeNav()" type="button" class="closebtn btn-hover1">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        
+                    </div>
+                    <div>
+                        <!-- side menus -->
+                        <ul>
+                            <li><a href="/" class="nav-link active">About</a></li>
+                            <li><a href="/" class="nav-link">Contact</a></li>
+                            <li class="pages"><a href="/" class="nav-link">More</a></li>
+                            <li class="collapse-btn">
+                                <a href="" class="nav-link plus_collapse" dat-bs-toggle="collapse">
+                                    <i class="fa-solid fa-plus"></i>
+                                </a>
+                                <div class="collopse" id="pages">
+                                    <ul>
+                                    <li><a href="/" class="nav-link">Service</a></li>
+                                    <li><a href="/" class="nav-link">pricing plan</a></li>
+                                    <li><a href="/" class="nav-link">Portafolio</a></li>
+                                    <li><a href="/" class="nav-link">Team</a></li>
+                                    <li><a href="/" class="nav-link">Testimonials</a></li>
+                                    <li><a href="/" class="nav-link">Faq</a></li>
+                                    <li><a href="/" class="nav-link">Blog</a></li>
+                                    <li><a href="/" class="nav-link">Coming Soon</a></li>
+                                    <li><a href="/" class="nav-link">404</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <div id="search-bar">
+                    <div onclick="close_search()" class="btn-hover1">
+                    <i  class="fa-solid fa-xmark"></i>
+                    </div>
+                
+
+                <form action="#" method="search">
+                    <input type="search" required placeholder="Search...">
+                    <button type="submit" class="btn-hover1">Search</button>
+                </form>
+                </div>
+                <!-- right section -->
+                <section class="header-right-sidebar">
+                    <div class="flex flex-sb">
+                        <a href="/"><img src="Images/right-side-logo.png" alt=""></a>
+                        <button class="close_rightsidebar fa-solid fa-xmark btn-hover1 "></button>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ducimus?</p>
+                    <a href="/" class="btn-hover1">Discover More</a>
+                    <hr>
+                    <h4>Connected details</h4>
+                    <ul class="flex">
+                        <li>
+                            <a href="#"><i class="fa-solid fa-phone"></i></a>
+                            <a href="#" class="text-lowercase">yourname@gmali.com</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="#" >123-456-7890</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-regular fa-clock"></i></a>
+                            <a href="#" >Office Hours: 8AM - 11PM - Sunday - Weekend Day</a>
+                        </li>
+                    </ul>
+                    <span class="flex">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </span>
+                </section>
+            </header>
+            <!-- ======= end of 1.1 header section ======= -->
+            <!-- ======= 1.2 hero section ======= -->
+            <section class="hero">
+                <div class="container">
+                    <div>
+                        <div class="hero-social-icon flex">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <hr>
+                        </div>
+                        <div class="center-data flex flex-col gap-2">
+                            <h1>DIGITAL SERVICE</h1>
+                            <H3>BUILDING YOUR EMPIRE DIGITALLY</H3>
+                            <div class="center-btn flex gap-15 mt-1 ">
+                                <a href="/" class="btn-hover1 flex">Get Started</a>
+                                <a href="/" class="btn-hover2 flex">Discover More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- Scroll animation lib -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 150,
+            duration: 1250,
+            once: true,
+        });
+    </script>
+
+    <!-- jquery js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jquery min js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- slick carousel min js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        integrity="sha256-DHF4zGyjT7GOMPBwpeehwoey18z8uiz98G4PRu2lV0A=" crossorigin="anonymous"></script>
+</body>
+</html>
